@@ -12,12 +12,12 @@ type Rule struct{
 
 func main(){
 	features := map[string]float64{
-		"temperature_mean": 17.4,
+		"temperature_mean": 17.4,			
 		"precipitation": 250.0,
 	}
 
 	rules := []Rule{
-		{Feature: "temperature_mean", Min: 5.0, Max: 25.0, Critical: true},
+		{Feature: "temperature_mean", Min: 5.0, Max: 25.0, Critical: true}, 	//slice yapısı
 		{Feature: "precipitation", Min: 300.0, Max: 800.0, Critical: false},
 		{Feature: "soil_ph", Min: 6.0, Max: 8.0, Critical: false},
 	}
